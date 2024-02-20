@@ -690,10 +690,20 @@ void Application::perform_reshaping() {
 
     if(m_selected_edit_idx < 0) {
 
-        LOGGER.warn("Reshaping was not performed."
+        LOGGER.warn("Reshaping was not performed. "
                     " There is no active reshaping operation.");
         return;
     }
+
+#if SPHERICITY_ON
+    const int num_faces = m_mesh->get_num_facets();
+
+    if(m_face_k1.rows() != num_faces || m_face_k1.rows() != num_faces) {
+        LOGGER.error("Face curvature values were not provided. " 
+                     "3DReshapingTool cannot be used without this information when sphericity is enabled.");
+        return;
+    }
+#endif
 
     // Setting up reshaping parameters
     reshaping::ReshapingParams params;
