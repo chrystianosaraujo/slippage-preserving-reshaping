@@ -63,13 +63,17 @@ After building the project, the reshaping lib, and reshaping_app and reshaping_d
 Check the `./apps/reshaping_demo` folder for a demo example of how to use the reshaping library.
 
 ### reshaping_demo
-To run the reshaping app demo, run `reshaping_demo.exe -i <input_fn> -o <output_dir> -e <edit_operation_label>`
+To run the reshaping app demo, use the following command:
+```bash
+reshaping_demo.exe -i <input_fn> -o <output_dir> -e <edit_operation_label>
+```
 
+where:
 + `<input_fn>`: input mesh filename (obj)
 + `<output_dir>`: directory where all output files will be saved. 
 + `<edit_operation_label>`: label identifying an edit operation that must be loaded from the model `.deform` file. If no label is provided (no `-e` argument used), all the available edit operations will be listed for further use.
 
-Once finished, the output folder will contain obj files for input (`_input.obj`), displaced points (`_handles.obj`), fixed points (`_fixed_points.obj`), and the final reshape surface (`_output.obj`).
+Once the reshaping process is finished, the output folder will contain obj files for input (`_input.obj`), displaced points (`_handles.obj`), fixed points (`_fixed_points.obj`), and the final reshape surface (`_output.obj`).
 
 
 
