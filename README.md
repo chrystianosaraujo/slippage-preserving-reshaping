@@ -114,7 +114,7 @@ Below are the details for each numbered functionality highlighted in the image a
 
 Follow the steps below for quick use:
 + Load mesh using menu File->"Load Mesh"
-+ Activate _edit operation_ by clicking on the list of available operations (#10 in the image above)
++ Activate an  _"edit operation"_ by selecting one in the list of available operations (#10 in the image above)
 + Press "Run Reshaping" button (#9 in the image above)
  
 
