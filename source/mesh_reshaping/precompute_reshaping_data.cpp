@@ -1,5 +1,6 @@
 #include <mesh_reshaping/precompute_reshaping_data.h>
 
+#include <mesh_reshaping/globals.h>
 #include <mesh_reshaping/straight_chains.h>
 #include <mesh_reshaping/similarity_term.h>
 
@@ -191,7 +192,9 @@ precompute_reshaping_data(const ReshapingParams& params,
     init_triangle_transformations(*data);
     init_edge_current_and_target_lengths(*data);
     init_num_straight_pairs(*data);
+#if SPHERICITY_ON
     init_sphericity_terms(params, *data);
+#endif
     init_similarity_edge_weights(params, *data);
     init_length_based_edge_weights(*data);
 
