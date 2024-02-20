@@ -45,7 +45,7 @@ models
 ```
 + The reshaping library codebase can be found in the `./include` and `./source` folders.
 + The `./apps/reshaping_demo` directory contains a demo example demonstrating how to use the reshaping library.
-+ The `./apps/reshaping_app` directory contains a full GUI-based app that utilizes the reshaping library. See the `Usage` section for details on how to use it.
++ The `./apps/reshaping_app` directory contains a prototype for a GUI-based app that utilizes the reshaping library. See the `Usage` section for details on how to use it.
 + The `./apps/models` directory contains input examples for reshaping tasks. Each obj file is accompanied by the following files:
     +  `.fk`: precomputed per-face curvatures
     +  `.deform`: pre-defined edit operations. Each operation is identified by a unique label.
@@ -78,7 +78,7 @@ Once the reshaping process is finished, the output folder will contain obj files
 ### reshaping_app
 The GUI-based reshaping app offers the following functionalities:
 
-* provides a UI for creating, editing, and deleting _editing operations_ for an input mesh
+* provides a **yet-rudimentary** UI for creating, editing, and deleting _editing operations_ for an input mesh
 * save and load pre-defined cameras for _editing operations_ already created
 * provides a few visualization options for the surface mesh and _editing operation_
 * screenshot options
