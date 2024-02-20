@@ -109,7 +109,7 @@ private:
     void request_redraw() const;
 
 private:
-    NavigateStyle m_style = NavigateStyle::Free;
+    NavigateStyle m_style = NavigateStyle::Turntable;
     UpDir m_up_dir = UpDir::YUp;
     ProjectionMode m_projection_mode = ProjectionMode::Perspective;
 
