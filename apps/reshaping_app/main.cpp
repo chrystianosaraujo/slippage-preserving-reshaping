@@ -29,7 +29,7 @@ struct CLIArgs {
     bool disp_render_off = false;
     bool straight_render_off = false;
     bool export_detailed_opt_info = false;
-    bool handle_error_distrib_on = false;
+    bool handle_error_distrib_on = true;
     bool edit_render_off = false;
     bool wireframe_on = false;
     bool normalize_mesh_off = false;
