@@ -33,7 +33,7 @@ struct CLIArgs {
     std::string temp_dir;
 
     int max_iters  = 100;
-    bool handle_error_distrib_on = false;
+    bool handle_error_distrib_on = true;
 };
 
 void setup_logger() {
