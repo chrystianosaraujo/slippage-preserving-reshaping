@@ -1,7 +1,7 @@
 # Slippage-Preserving Reshaping of Human-Made 3D Content
 <img src="./page_assets/teaser.jpg" width="100%">
 
-This repository contains the codebase for the paper titled "Slippage-Preserving Reshaping of Human-Made 3D Content" published in SIGGRAPH Asia 2023. For more details and to download the paper, please visit the [project website](https://www.cs.ubc.ca/labs/imager/tr/2023/3DReshaping/).
+This repository contains the codebase for the paper titled "Slippage-Preserving Reshaping of Human-Made 3D Content" published in SIGGRAPH Asia 2023. Please visit the [project website](https://www.cs.ubc.ca/labs/imager/tr/2023/3DReshaping/) for more details and download the paper.
 
 **Slippage-Preserving Reshaping of Human-Made 3D Content**<br>
 [Chrystiano Araújo](https://www.cs.ubc.ca/~araujoc/), [Nicholas Vining](https://www.cs.ubc.ca/~nvining/), [Silver Burla](https://silverburla.com/), [Manuel Ruivo de Oliveira](), [Enrique Rosales](https://www.enrique-rosales.com/), and [Alla Sheffer](http://www.cs.ubc.ca/~sheffa/) <br>
