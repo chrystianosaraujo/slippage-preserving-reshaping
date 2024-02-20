@@ -18,7 +18,7 @@ Only Windows build is supported at the moment (specifically tested on Visual Stu
 Besides the MSVC compiler, the only dependency is cmake, as our build system automatically downloads all other dependencies.
 
 ## Compilation
-Use the following instructions to build in release mode.
+Use the following instructions to build the project in release mode.
 
 ```
 cd [PROJECT_ROOT]
