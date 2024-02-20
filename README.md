@@ -1,7 +1,7 @@
 # Slippage-Preserving Reshaping of Human-Made 3D Content
 <img src="./page_assets/teaser.jpg" width="100%">
 
-This repository contains the codebase for the paper titled "Slippage-Preserving Reshaping of Human-Made 3D Content" published in SIGGRAPH Asia 2023. For more details and to download the paper, please visit the [project website](https://www.cs.ubc.ca/labs/imager/tr/2023/3DReshaping/).
+This repository contains the codebase for the paper titled "Slippage-Preserving Reshaping of Human-Made 3D Content" published in SIGGRAPH Asia 2023. Please visit the [project website](https://www.cs.ubc.ca/labs/imager/tr/2023/3DReshaping/) for more details and to download the paper.
 
 **Slippage-Preserving Reshaping of Human-Made 3D Content**<br>
 [Chrystiano Araújo](https://www.cs.ubc.ca/~araujoc/), [Nicholas Vining](https://www.cs.ubc.ca/~nvining/), [Silver Burla](https://silverburla.com/), [Manuel Ruivo de Oliveira](), [Enrique Rosales](https://www.enrique-rosales.com/), and [Alla Sheffer](http://www.cs.ubc.ca/~sheffa/) <br>
@@ -27,7 +27,7 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 ```
 
-Now, either open the VS project or build it directly from command line as follows:
+Now, either open the VS project or build it directly from the command line as follows:
 
 ```
 cmake --build . --config Release
@@ -52,7 +52,7 @@ models
     +  `.cam`: pre-defined camera settings for each edit operation label defined in the `.deform` file
     +  `.straight`: optional file containing straightness information
 
-After building the project, the reshaping lib, and reshaping_app and reshaping_demo executables can be found as follows:
+After building the project, the reshaping library, reshaping_app executable, and reshaping_demo executable can be found as follows:
 + `mesh_reshaping_lib.lib` can be found under `./build/Release`
 + `reshaping_demo.exe` can be found under `./build/apps/reshaping_demo/Release/`
 + `reshaping_app.exe` can be found under `./build/apps/reshaping_app/Release/`
@@ -82,7 +82,7 @@ The GUI-based reshaping app offers the following functionalities:
 * save and load pre-defined cameras for _editing operations_ already created
 * provides a few visualization options for the surface mesh and _editing operation_
 * screenshot options
-* most of the rendering and running options are also directly available through command-line execution.
+* most rendering and running options are also directly available through command-line execution.
 
 
 To run the reshaping app, use the following command:
@@ -112,10 +112,10 @@ Below are the details for each numbered functionality highlighted in the image a
 12. List of all pre-defined _camera_ available for use. The current camera can also be saved similarly to the item above.
 13. Visualization options available for surface mesh and _editing operation_
 
-Follow the steps below for quick use:
+**Follow the steps below for quick use:**
 + Load mesh using menu File->"Load Mesh"
 + Activate an  _"edit operation"_ by selecting one in the list of available operations (#10 in the image above)
-+ Press "Run Reshaping" button (#9 in the image above)
++ Press the "Run Reshaping" button (#9 in the image above)
  
 
 
