@@ -112,6 +112,11 @@ Below are the details for each numbered functionality highlighted in the image a
 12. List of all pre-defined _camera_ available for use. The current camera can also be saved similarly to the item above.
 13. Visualization options available for surface mesh and _editing operation_
 
+Follow the steps below for quick use:
++ Load mesh using menu File->"Load Mesh"
++ Activate _edit operation_ by clicking on the list of available operations (#10 in the image above)
++ Press "Run Reshaping" button (#9 in the image above)
+ 
 
 
 
