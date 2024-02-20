@@ -44,13 +44,13 @@ apps
 models
 ```
 + The reshaping library codebase can be found in the `./include` and `./source` folders.
-+ The `./apps/reshaping_demo` directory contains a demo example demonstrating how to use the reshaping library.
++ The `./apps/reshaping_demo` directory contains a demo example demonstrating how to use the reshaping library. See the `Usage` section for details.
 + The `./apps/reshaping_app` directory contains a prototype for a GUI-based app that utilizes the reshaping library. See the `Usage` section for details on how to use it.
 + The `./apps/models` directory contains input examples for reshaping tasks. Each obj file is accompanied by the following files:
-    +  `.fk`: precomputed per-face curvatures
+    +  `.fk`: precomputed per-face curvatures.
     +  `.deform`: pre-defined edit operations. Each operation is identified by a unique label.
-    +  `.cam`: pre-defined camera settings for each edit operation label defined in the `.deform` file
-    +  `.straight`: optional file containing straightness information
+    +  `.cam`: pre-defined camera settings for each edit operation label defined in the `.deform` file.
+    +  `.straight`: optional file containing straightness information.
 
 After building the project, the reshaping library, reshaping_app executable, and reshaping_demo executable can be found as follows:
 + `mesh_reshaping_lib.lib` can be found under `./build/Release`
