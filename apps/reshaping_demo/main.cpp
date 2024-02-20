@@ -146,6 +146,8 @@ void list_edit_operations(const std::string& mesh_fn) {
     LOGGER.info("Available edit operations for {}", fs::path(mesh_fn).stem().string());
     for(const auto& op : edit_ops )
         printf("    %s\n", op.label.c_str());
+
+    LOGGER.info("Select one of the above edit operations and rerun reshaping_demo.exe using -e <edit_op>");
 }
 
 int main(const int argc, const char** argv) {
