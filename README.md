@@ -41,4 +41,40 @@ source
 apps
     reshaping_app
     reshaping_demo
+models
 ```
++ The reshaping library codebase can be found in the `./include` and `./source` folders.
++ The `./apps/reshaping_demo` directory contains a demo example demonstrating how to use the reshaping library.
++ The `./apps/reshaping_app` directory contains a full GUI-based app that utilizes the reshaping library. See the `Usage` section for details on how to use it.
++ The `./apps/models` directory contains input examples for reshaping tasks. Each obj file is accompanied by the following files:
+    +  `.fk`: precomputed per-face curvatures
+    +  `.deform`: pre-defined edit operations. Each operation is identified by a unique label.
+    +  `.cam`: pre-defined camera settings for each edit operation label defined in the `.deform` file
+    +  `.straight`: optional file containing straightness information
+
+After building the project, the reshaping lib, and reshaping_app and reshaping_demo executables can be found as follows:
++ `mesh_reshaping_lib.lib` can be found under `./build/Release`
++ `reshaping_demo.exe` can be found under `./build/apps/reshaping_demo/Release/`
++ `reshaping_app.exe` can be found under `./build/apps/reshaping_app/Release/`
+
+## Usage
+
+### mesh_reshaping.lib
+Check the `./apps/reshaping_demo` folder for a demo example of how to use the reshaping library.
+
+### reshaping_demo
+To run the reshaping app demo, run `reshaping_demo.exe -i <input_fn> -o <output_dir> -e <edit_operation_label>`
+
++ `<input_fn>`: input mesh filename (obj)
++ `<output_dir>`: directory where all output files will be saved. 
++ `<edit_operation_label>`: label identifying an edit operation that must be loaded from the model `.deform` file. If no label is provided (no `-e` argument used), all the available edit operations will be listed for further use.
+
+Once finished, the output folder will contain obj files for input (`_input.obj`), displaced points (`_handles.obj`), fixed points (`_fixed_points.obj`), and the final reshape surface (`_output.obj`).
+
+
+
+
+
+
+
+
