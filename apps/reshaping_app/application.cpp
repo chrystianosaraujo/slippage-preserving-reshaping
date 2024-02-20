@@ -383,7 +383,7 @@ void Application::setup_window(int width, int height) {
     WindowParams win_params;
     win_params.width  = width;
     win_params.height = height;
-    win_params.title  = "3D Reshaping";
+    win_params.title  = "Slippage-Presering Reshaping of Human Made 3D Content";
     win_params.msaa_on = true;
     win_params.clear_color = Eigen::Vector4f(1.0f, 1.0f, 1.0f, 1.0f);
     win_params.open_maximized = true;
