@@ -63,7 +63,7 @@ After building the project, the reshaping lib, and reshaping_app and reshaping_d
 Check the `./apps/reshaping_demo` folder for a demo example of how to use the reshaping library.
 
 ### reshaping_demo
-To run the reshaping app demo, use the following command:
+To run the reshaping demo, use the following command:
 ```bash
 reshaping_demo.exe -i <input_fn> -o <output_dir> -e <edit_operation_label>
 ```
@@ -78,15 +78,39 @@ Once the reshaping process is finished, the output folder will contain obj files
 ### reshaping_app
 The GUI-based reshaping app offers the following functionalities:
 
-1) provides a UI for creating, editing, and deleting _editing operations_ for an input mesh
-2) save and load pre-defined cameras for _editing operations_ already created
-3) provides a few visualization options for the surface mesh and _editing operation_
-4) screenshot options
-5) most of the rendering and running options are also directly available through command-line execution.
+* provides a UI for creating, editing, and deleting _editing operations_ for an input mesh
+* save and load pre-defined cameras for _editing operations_ already created
+* provides a few visualization options for the surface mesh and _editing operation_
+* screenshot options
+* most of the rendering and running options are also directly available through command-line execution.
+
+
+To run the reshaping app, use the following command:
+```bash
+reshaping_app.exe -o <output_dir>
+```
+
+Use `--help` for a list of all available command line options.
 
 <p align="center">
     <img src="./page_assets/reshaping_app.jpg" width="65%">
 </p>
+
+Below are the details for each numbered functionality highlighted in the image above:
+
+1. Camera manipulation
+2. Vertex selection
+3. Handle annotation. Each clicked vertex is defined as a handle that can be further displaced.
+4. Fixed point annotation. Each clicked vertex is defined as a fixed point.
+5. Erases handle or fixed point annotations
+6. Translates previously annotated handles. In the current version, all handles are transformed at once.
+7. Rotates previously annotated handles. In the current version, all handles are transformed at once.
+8. Scales previously annotated handles. In the current version, all handles are transformed at once.
+9. Runs the `reshaping` tool. Note that this must be called after selecting a pre-defined _editing operation_.
+10. List of all pre-defined _editing operation_ available for use.
+11. Saves the current _edit operation_ by providing a label and clicking on the "Save" button.
+12. List of all pre-defined _camera_ available for use. The current camera can also be saved similarly to the item above.
+13. Visualization options available for surface mesh and _editing operation_
 
 
 
