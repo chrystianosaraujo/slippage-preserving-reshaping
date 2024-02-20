@@ -75,6 +75,19 @@ where:
 
 Once the reshaping process is finished, the output folder will contain obj files for input (`_input.obj`), displaced points (`_handles.obj`), fixed points (`_fixed_points.obj`), and the final reshape surface (`_output.obj`).
 
+### reshaping_app
+The GUI-based reshaping app offers the following functionalities:
+
+1) provides a UI for creating, editing, and deleting _editing operations_ for an input mesh
+2) save and load pre-defined cameras for _editing operations_ already created
+3) provides a few visualization options for the surface mesh and _editing operation_
+4) screenshot options
+5) most of the rendering and running options are also directly available through command-line execution.
+
+<p align="center">
+    <img src="./page_assets/reshaping_app.jpg" width="65%">
+</p>
+
 
 
 
