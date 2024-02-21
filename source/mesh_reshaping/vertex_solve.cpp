@@ -150,7 +150,6 @@ void compute_normal_entries(const reshaping::VertexSolveParams& params,
     const auto& adj_e2f = mesh.get_edge_face_adjacency();
 
     /*
-     * CHANGED TO
      *      weight * (l^0_ij / L_avg) (n^i . e_(ij) / l_ij)^2 ... same for n^j
      */
     double normal_weight = params.normal_weight;
